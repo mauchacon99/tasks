@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Task extends Model
 {
-    public function index()
-    {
-        die('tareas');
-    }
+    protected $fillable =  [
+        'description',
+        'status'
+    ];
+     
 }

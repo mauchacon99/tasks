@@ -1,0 +1,17 @@
+
+.div-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: aquamarine;
+}
+
+.container-info {
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+ 

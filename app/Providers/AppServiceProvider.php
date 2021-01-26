@@ -3,6 +3,11 @@
 namespace App\Providers;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\ServiceProvider;
+use App\Http\ViewComposers\TasksRowComposer;
+use Illuminate\Support\Facades\{Schema, Blade, View};
+use App\Models\Taks;
+
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         Builder::defaultStringLength(191);
+
+        View::composer(['task.index', 'task.edit'], TasksRowComposer::class);
     }
 
     /**
@@ -22,7 +29,6 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
-        //
+    { 
     }
 }

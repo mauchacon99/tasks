@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Tareas', 'TaskController@index')->name('task.index');
+
+Route::group(
+	['prefix' => 'tareas'], function(){
+	require __DIR__.'/task.php';
+});

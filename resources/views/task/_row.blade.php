@@ -18,7 +18,6 @@
                         <i class="fa fa-{{ ($Task->status)? 'check-double' : 'check-circle '}}">
                         </i>
                   </a>
-                  
                   <button type="submit" 
                           class="btn btn-{{($Task->status)?'danger':'secondary'}} "
                   >

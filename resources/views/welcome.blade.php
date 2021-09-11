@@ -78,7 +78,7 @@
                     @endauth
                 </div>
             @endif
-
+                {{ dd("mauricio") }}
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
